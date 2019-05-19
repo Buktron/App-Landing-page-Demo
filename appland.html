@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+ 
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Backwards Compatibility Mode for Internet Edge Broswer. Helps Display correctly-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--CDN = Content Delivery Network, crossorigin make sure that were using anonymously and not sending data anywhere-->
+    
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+    <title>Bootstrap 4</title>
+    
+  </head>
+  
+  <body data-spy="scroll" data-target="#navbar" data-offset="70">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <a class="navbar-brand" href="#">MyApp</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <!--active class keeps the "home button highlighted-->
+            <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Download the App</a>
+          </li>
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>-->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Email">
+          <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+          <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+        </form>
+      </div>
+    </nav>
+    
+    <div class="jumbotron" id="jumbotron">
+      <h1 class="display-4">My Awesome App</h1>
+      <p class="lead">This is why you should download this fantastic app!</p>
+      <hr class="my-4">
+      <p>Want to know more? Join our mailing list.</p>
+      
+      <form class="form-inline justify-content-center">
+         <div class="form-group">
+             <label class="sr-only" for="email">Email Address</label>
+             <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+             </div>
+         </div>
+        <button type="submit" class="btn btn-primary ml-2">Sign Up</button>
+      </form>
+    </div>
+    
+    <!--App Summary Container-->
+    <div class="container">
+         <div class="blank" id="appSummary"> <!--If class named "row" it will act like a row, same for "column-->
+            
+            <h1>Why This App is Awesome</h1>
+            <p class="lead">Summary, once again, of your app's awesomeoness</p>
+             
+        </div>
+    </div>
+    
+    <!--Title Card Deck-->
+    <div class="container" id="about">
+        <div class="card-deck">
+            <div class="card">
+            <img src="cyndaquil.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-fire-alt"></i> Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+            <div class="card">
+            <img src="cyndaquil.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-burn"></i> Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+            <div class="card">
+            <img src="cyndaquil.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-fire"></i> Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer--> 
+    <div id="footer">
+        <div class="blank">
+            
+            <h2>Download the App!</h2>
+            <p class="lead">Really, Why Should I download This App</p>
+            <p><a href="#"><img src="playstore.png" id="playStoreIcon"></a></p>
+            
+        </div>
+    </div>
+  
+<!--Free Bootstrap Themese when you have signed-up for eco-webhosting.com or .co.uk and scroll to the bottom to get $297 for free. Regulary Updated.-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Optional JavaScript -->
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="land.js"></script>
+  </body>
+  
+</html>

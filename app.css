@@ -1,0 +1,61 @@
+body
+{
+    position: relative;
+}
+
+#navbar
+{
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.jumbotron
+{
+    background-image: url(coffee.jpg);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.display-4, .jumbotron p
+{
+    color: honeydew;
+}
+
+#email
+{
+    width: 300px;
+}
+
+#appSummary
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.card-img-top
+{
+    width: 100%;
+}
+
+#footer
+{
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: chocolate;
+    padding-bottom: 50px;
+}
+
+#playStoreIcon
+{
+    width: 150px;
+    height: 150px;
+}
+
+.card
+{
+    z-index: -1;
+}
